@@ -1,0 +1,347 @@
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+* {
+  box-sizing: border-box;
+}
+    p {
+        font-family:Roboto-Regular;
+    }
+    h1{
+        font-family:Roboto-Bold;
+    }
+
+/* Style the header */
+header {
+  padding: 1px;
+  text-align: center;
+  font-size: 5px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 20px;
+    padding-left: 120px;
+    padding-top: 100px;
+}
+    nav h1{
+        color:white;
+        line-height:5px;
+        font-size:50px;
+        width:400px;
+    }
+    nav p{
+        padding-top:10px;
+        color:white;
+        line-height:1px;
+        spaci
+    }
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  padding: 10px;
+    padding-top:100px;
+}
+
+/* Style the footer */
+footer {
+  padding: 10px;
+  text-align: center;
+  color: white;
+margin-top:65px;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+    }
+
+
+
+
+
+    body {
+        background: url(9e0b5a1bf814bf6a4455b7ca0225fbc3d81d7e57.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    }
+    /* Add a black background color to the top navigation */
+.topnav {
+  overflow: hidden;
+    text-align:middle;
+    padding-left:400px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 25px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  color: white;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    position: absolute;
+    padding-right: 30px;
+    right: 1px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: block;
+}
+  a.t1 {
+    /* padding-right: 100px; */
+    position: absolute;
+    margin-left: 20px;
+    left: 10px;
+    top: 5px;
+    font-size: 25px;
+}
+    a.t2
+    {position:absolute;
+    left:5px;
+    margin-left:20px;
+    font-size:10px;}
+
+.topna 
+.navbar {
+  overflow: hidden;
+  background-color: #333;  
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.navbar .icon {
+  display: none;
+}
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+input[type=text], input[type=password] {
+    width: 382px;
+    padding: 15px;
+    margin: 0px 0 0px 0;
+    /* color: white; */
+    font-color: white;
+    display: inline-block;
+    border: 1px solid grey;
+    border-bottom: .02rem solid grey;
+    background: transparent;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #6464cf;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.signupbtn {
+    float: left;
+    width: 382px;
+}
+
+/* Add padding to container elements */
+.container {
+    padding-top:50px;
+  padding: 16px;
+    padding-left:200px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+</style>
+    <title>The HTML5 Herald</title>
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+</head>
+
+<body>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <header>
+<div class="topnav" id="myTopnav">
+   <a class="t1">Stamps</a>
+  <a href="#home" class="active">About</a>
+  <a href="#news">Integrations</a>
+  <a href="#contact">Pricing</a>
+  <a href="#about">Contacts</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div> 
+
+    </header>
+    <section>
+    <nav>
+
+        <h1>Simple Way to</h1>
+        <h1> Organize Your </h1>
+        <h1>Inspirations </h1>
+        <p>I think what motivates people is not great hate,</p>
+        <p> but great love for other people</p>
+    
+        
+        
+        </nav>
+        <article>
+        <form action="/action_page.php" >
+  <div class="container">
+   
+    <p style=" 
+    padding-left: 130px; color:white;"
+>SIGN UP FOR FREE</p>
+
+  
+    <input type="text" placeholder=" Email" name="email" required>
+
+   
+    <input type="password" placeholder="Password" name="psw" required>
+
+ 
+    <input type="password" placeholder=" Password" name="psw-repeat" required>
+    
+   
+    
+    
+
+    <div class="clearfix">
+     
+      <button type="submit" class="signupbtn">Sign Up</button>
+      
+    </div>
+      <p style = "padding-left:80px; color:grey; ">By clicking "Sign up" I agree to our</p>
+      <p style ="padding-left: 130px; color:white; margin-top: -10px;" >Terms of Services</p>.
+  </div>
+</form></article>
+    </section>
+    
+    <footer>
+        <div class="navbar" id="myNavbar">
+  
+  <a href="#">PRIVACY POLICY</a>
+   <a href="#">TERMS OF USE</a> 
+  <a href="#">HELP</a>
+  <a href="#">CONTACT</a>
+    <a class = "t2">2016 Stamp. All Rights Reserved</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+    </footer>
+  <script src="js/scripts.js">
+    function myFunction() {
+  var x = document.getElementById("myNavbar");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+}
+    </script>
+</body>
+</html>
